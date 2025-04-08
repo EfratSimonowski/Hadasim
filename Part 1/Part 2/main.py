@@ -25,6 +25,11 @@ def missing_data(df):
 
 
 # part 4
+"""
+קובץ Parquet עדיף כאן מכיוון שהוא מציע דחיסה יעילה, שמפחיתה את גודל הקובץ ומשפרת את ביצועי הקריאה והכתיבה
+ בנוסף, פורמט זה מאפשר טעינה של נתונים בצורה ממוקדת
+מה שצפוי לשפר את ביצועי השאילתות על נתונים גדולים, ומאפשר גישה מהירה יותר לעיבוד נתונים בזמן אמת או בשאילתות מבוזרות.
+"""
 def read_file(file_path):
     ext = os.path.splitext(file_path)[1].lower()
     if ext == '.csv':
@@ -54,6 +59,7 @@ def avg(file_path):
 
 
 # part 3
+
 def avg_day(file_path):
     df = clean_none_data(file_path)
     df['timestamp'] = pd.to_datetime(df['timestamp'], errors='coerce', dayfirst=True)
