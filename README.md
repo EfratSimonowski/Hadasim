@@ -55,11 +55,11 @@ signal processing.
 The application follows a client-server architecture. The client-side application interfaces with the server-side API, The server side interacts with
 the database to store the data and return information. The way the system components communicate with each other:
 
-• Client side is developed in React using react-redux redux-toolkit,axios and designed by mui-material.
+• Client side is developed in React ,axios and designed by mui-material.
 
-• Server side is developed in python.
+• The server-side is developed in Python using FastAPI for the API, Pydantic for data validation and models, and pymongo to interact with MongoDB, served by Uvicorn.
 
-• Database implemented in mongoDB server.
+• Database implemented in mongoDB.
 
 ### Sign-up to the system
 
