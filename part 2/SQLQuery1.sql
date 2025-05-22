@@ -1,5 +1,5 @@
 use FamilyTrie
-/*CREATE TABLE People (
+CREATE TABLE People (
     Person_Id INT PRIMARY KEY,
     Personal_Name VARCHAR(100),
     Family_Name VARCHAR(100),
@@ -15,22 +15,17 @@ CREATE TABLE Family_Relationships (
     Connection_Type VARCHAR(50),
     FOREIGN KEY (Person_Id) REFERENCES People(Person_Id),
     FOREIGN KEY (Relative_Id) REFERENCES People(Person_Id)
-	INSERT INTO Family_Relationships(select Relative_Id,Person_Id,Connection_Type from Family_Relationships 
-where Person_Id=spouse_Id 
-NOT EXISTS
-select Person_Id,Relative_Id,Connection_Type from Family_Relationships where Relative_Id=spouse_Id)
-);*/
+);
 
 
-/*INSERT INTO Family_Relationships (Person_Id, Relative_Id, Connection_Type)
-(Select A.Person_Id , A.Spouse_Id , CASE WHEN A.Gender = '·Ô' THEN '·˙ ÊÂ‚' ELSE '·Ô ÊÂ‚' END
+INSERT INTO Family_Relationships (Person_Id, Relative_Id, Connection_Type)
+(Select A.Person_Id , A.Spouse_Id , CASE WHEN A.Gender = '√°√Ø' THEN '√°√∫ √¶√•√¢' ELSE '√°√Ø √¶√•√¢' END
 From People A
 left join Family_Relationships B
 On A.Person_Id=B.Person_Id AND A.Spouse_Id=B.Relative_Id
 WHERE B.Person_Id IS NULL 
-AND A.Spouse_Id IS NOT NULL)*/
+AND A.Spouse_Id IS NOT NULL)
 
-SELECT * from Family_Relationships
 
 
 
