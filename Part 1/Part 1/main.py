@@ -34,18 +34,15 @@ def merge_counters(counters):
 
 def get_top_n_errors(log_file, number_of_occurrences):
     split_file(log_file)
-
     divide_files = [f for f in os.listdir() if f.startswith("divide_file_")]
     counters = [count_errors_in_divide_file(divide_file) for divide_file in divide_files]
-
     final_counter = merge_counters(counters)
-
     return heapq.nlargest(number_of_occurrences, final_counter.items(), key=lambda x: x[1])
 
 
 log_file = "logs.txt"
 print("insert number of occurrences")
-number_of_occurrences = int(input())
+number_of_occurrences=(int(input()))
 top_errors = get_top_n_errors(log_file, number_of_occurrences)
 print(top_errors)
 """

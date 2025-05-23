@@ -1,5 +1,4 @@
 import os
-
 import pandas as pd
 
 
@@ -30,6 +29,8 @@ def missing_data(df):
  בנוסף, פורמט זה מאפשר טעינה של נתונים בצורה ממוקדת
 מה שצפוי לשפר את ביצועי השאילתות על נתונים גדולים, ומאפשר גישה מהירה יותר לעיבוד נתונים בזמן אמת או בשאילתות מבוזרות.
 """
+
+
 def read_file(file_path):
     ext = os.path.splitext(file_path)[1].lower()
     if ext == '.csv':

@@ -44,6 +44,7 @@ export default function Add_order() {
   }
 
   function setQuantity(newValue: number) {
+    debugger
     if (newValue) {
       order.quantity_to_order = newValue
       setOrder(order)

@@ -1,11 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0b448d93-1a26-4120-ab95-0561df0a2923" name="Default Changelist" comment="" />
+    <list default="true" id="0b448d93-1a26-4120-ab95-0561df0a2923" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Part 1/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Part 1/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Part 1/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Part 1/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../part 2/SQLQuery1.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../../part 2/SQLQuery1.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../part 3/part 3.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../part 3/part3.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../part 4/client-ts/src/components/orders/add_order.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../part 4/client-ts/src/components/orders/add_order.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../part 4/client-ts/src/components/orders/orders_admin.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../part 4/client-ts/src/components/orders/orders_admin.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../part 4/server/venv/Scripts/fastapi.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../../part 4/server/venv/Scripts/fastapi.exe" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
   <component name="ProjectId" id="2vQ6tvewrj55W14ipt1c0yl8tY5" />
   <component name="ProjectViewState">
@@ -13,7 +28,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Part 1" />
   </component>
   <component name="RunManager">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
@@ -50,25 +65,29 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
+    <state x="549" y="163" key="FileChooserDialogImpl" timestamp="1747997422682">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state x="549" y="163" key="FileChooserDialogImpl/0.0.1536.816@0.0.1536.816" timestamp="1747997422682" />
     <state x="0" y="0" key="FileDocumentManager.FileCacheConflict" timestamp="1744065248005">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
     <state x="0" y="0" key="FileDocumentManager.FileCacheConflict/0.0.1536.816@0.0.1536.816" timestamp="1744065248005" />
-    <state width="1515" height="208" key="GridCell.Tab.0.bottom" timestamp="1744065943334">
+    <state width="1515" height="180" key="GridCell.Tab.0.bottom" timestamp="1745804811900">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state width="1515" height="208" key="GridCell.Tab.0.bottom/0.0.1536.816@0.0.1536.816" timestamp="1744065943334" />
-    <state width="1515" height="208" key="GridCell.Tab.0.center" timestamp="1744065943334">
+    <state width="1515" height="180" key="GridCell.Tab.0.bottom/0.0.1536.816@0.0.1536.816" timestamp="1745804811900" />
+    <state width="1515" height="180" key="GridCell.Tab.0.center" timestamp="1745804811900">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state width="1515" height="208" key="GridCell.Tab.0.center/0.0.1536.816@0.0.1536.816" timestamp="1744065943334" />
-    <state width="1515" height="208" key="GridCell.Tab.0.left" timestamp="1744065943334">
+    <state width="1515" height="180" key="GridCell.Tab.0.center/0.0.1536.816@0.0.1536.816" timestamp="1745804811900" />
+    <state width="1515" height="180" key="GridCell.Tab.0.left" timestamp="1745804811900">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state width="1515" height="208" key="GridCell.Tab.0.left/0.0.1536.816@0.0.1536.816" timestamp="1744065943334" />
-    <state width="1515" height="208" key="GridCell.Tab.0.right" timestamp="1744065943334">
+    <state width="1515" height="180" key="GridCell.Tab.0.left/0.0.1536.816@0.0.1536.816" timestamp="1745804811900" />
+    <state width="1515" height="180" key="GridCell.Tab.0.right" timestamp="1745804811900">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state width="1515" height="208" key="GridCell.Tab.0.right/0.0.1536.816@0.0.1536.816" timestamp="1744065943334" />
+    <state width="1515" height="180" key="GridCell.Tab.0.right/0.0.1536.816@0.0.1536.816" timestamp="1745804811900" />
   </component>
 </project>

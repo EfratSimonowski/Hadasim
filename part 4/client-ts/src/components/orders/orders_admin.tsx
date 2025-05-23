@@ -78,6 +78,7 @@ export default function Orders_admin() {
         let rowsToAdd: any[] = []
         data.map((order) => {
           if (order.status == Status.STARTED || order.status == Status.IN_PROGRESS) {
+            debugger
             if (typeof order.supply != "string" && typeof order.product != "string")
               rowsToAdd.push({
                 status: order.status,
