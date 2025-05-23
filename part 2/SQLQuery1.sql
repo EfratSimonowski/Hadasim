@@ -18,38 +18,38 @@ CREATE TABLE Relations (
 );
 INSERT INTO Individuals (Person_Id, Personal_Name, Family_Name, Gender, Father_Id, Mother_Id, Spouse_Id)
 VALUES
-(1, 'ιερι', 'λδο', 'αο', NULL, NULL, 2),
-(2, 'ωψδ', 'λδο', 'αϊ', NULL, NULL, 1),
-(3, 'γπδ', 'λδο', 'αϊ', 1, 2, 4),
-(4, 'ΰεψι', 'μει', 'αο', NULL, NULL, NULL),
-(5, 'πεςν', 'λδο', 'αο', 1, 2, NULL);
+(1, 'Χ™Χ•Χ΅Χ™', 'Χ›Χ”Χ', 'Χ‘Χ', NULL, NULL, 2),
+(2, 'Χ©Χ¨Χ”', 'Χ›Χ”Χ', 'Χ‘Χª', NULL, NULL, 1),
+(3, 'Χ“Χ Χ”', 'Χ›Χ”Χ', 'Χ‘Χª', 1, 2, 4),
+(4, 'ΧΧ•Χ¨Χ™', 'ΧΧ•Χ™', 'Χ‘Χ', NULL, NULL, NULL),
+(5, 'Χ Χ•ΧΆΧ', 'Χ›Χ”Χ', 'Χ‘Χ', 1, 2, NULL);
 
 
 INSERT INTO Relations (Person_Id, Relative_Id, Connection_Type)
-SELECT Person_Id, Father_Id, 'ΰα' FROM Individuals WHERE Father_Id IS NOT NULL
+SELECT Person_Id, Father_Id, 'ΧΧ‘' FROM Individuals WHERE Father_Id IS NOT NULL
 UNION
-SELECT Person_Id, Mother_Id, 'ΰν' FROM Individuals WHERE Mother_Id IS NOT NULL;
+SELECT Person_Id, Mother_Id, 'ΧΧ' FROM Individuals WHERE Mother_Id IS NOT NULL;
 
 
 INSERT INTO Relations (Person_Id, Relative_Id, Connection_Type)
 SELECT Father_Id, Person_Id,
-       CASE Gender WHEN 'αο' THEN 'αο' ELSE 'αϊ' END
+       CASE Gender WHEN 'Χ‘Χ' THEN 'Χ‘Χ' ELSE 'Χ‘Χª' END
 FROM Individuals WHERE Father_Id IS NOT NULL
 UNION
 SELECT Mother_Id, Person_Id,
-       CASE Gender WHEN 'αο' THEN 'αο' ELSE 'αϊ' END
+       CASE Gender WHEN 'Χ‘Χ' THEN 'Χ‘Χ' ELSE 'Χ‘Χª' END
 FROM Individuals WHERE Mother_Id IS NOT NULL;
 
 
 INSERT INTO Relations (Person_Id, Relative_Id, Connection_Type)
 SELECT Person_Id, Spouse_Id,
-       CASE Gender WHEN 'αο' THEN 'αϊ ζεβ' ELSE 'αο ζεβ' END
+       CASE Gender WHEN 'Χ‘Χ' THEN 'Χ‘Χª Χ–Χ•Χ’' ELSE 'Χ‘Χ Χ–Χ•Χ’' END
 FROM Individuals WHERE Spouse_Id IS NOT NULL;
 
 
 INSERT INTO Relations (Person_Id, Relative_Id, Connection_Type)
 SELECT A.Person_Id, B.Person_Id,
-       CASE B.Gender WHEN 'αο' THEN 'ΰη' ELSE 'ΰηεϊ' END
+       CASE B.Gender WHEN 'Χ‘Χ' THEN 'ΧΧ—' ELSE 'ΧΧ—Χ•Χª' END
 FROM Individuals A
 JOIN Individuals B ON A.Father_Id = B.Father_Id AND A.Mother_Id = B.Mother_Id
 WHERE A.Person_Id <> B.Person_Id;
@@ -60,8 +60,8 @@ SELECT
     B.Spouse_Id AS Person_Id,
     B.Person_Id AS Relative_Id,
     CASE B.Gender
-        WHEN 'αο' THEN 'αϊ ζεβ'
-        ELSE 'αο ζεβ'
+        WHEN 'Χ‘Χ' THEN 'Χ‘Χª Χ–Χ•Χ’'
+        ELSE 'Χ‘Χ Χ–Χ•Χ’'
     END AS Connection_Type
 FROM Individuals B
 LEFT JOIN Relations R
